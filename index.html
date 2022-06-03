@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <form onsubmit="printTable(); return false">
+        <label for="InpuTable" >
+            Input Table number:<br> <br>
+        <input type="number" id="InpuTable" required min="2">
+        <button>Print</button>
+    </form>
+</label>
+</body>
+<script>
+    function printTable(){
+    let    InpuTable= document.querySelector("#InpuTable").value
+    document.write(`Table of ${InpuTable} is <br> <br> `)
+
+    for(let i=0; i<10; i++){
+      
+   
+        document.write(`${InpuTable} × ${i+1}= ${InpuTable *(i+1)} <br>`);
+   
+    }
+}
+    
+</script>
+</html>
