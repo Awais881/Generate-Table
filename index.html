@@ -5,29 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hello</h1>
-    <form onsubmit="printTable(); return false">
-        <label for="InpuTable" >
-            Input Table number:<br> <br>
-        <input type="number" id="InpuTable" required min="2">
-        <button>Print</button>
-    </form>
-</label>
-</body>
-<script>
-    function printTable(){
-    let    InpuTable= document.querySelector("#InpuTable").value
-    document.write(`Table of ${InpuTable} is <br> <br> `)
-
-    for(let i=0; i<10; i++){
+    <div class="container">
+        <form onsubmit="printTable(); " return false>
+            <label for="InpuTable" >
+            <center> <h1>Table Generator</h1> </center>
+            <center> <b>  Enter Table number:</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+           <input type="number" id="number1" required min="2"> <br> <br>
+           </label>
+          <label><b> Enter Multiplier Number </b>: <input type="number" id="number2" > <br> <br></label>
+            <button>Print</button>
+           
+        </form>
+        <div id="result"></div>
+      </div>
       
-   
-        document.write(`${InpuTable} × ${i+1}= ${InpuTable *(i+1)} <br>`);
-   
-    }
-}
-    
-</script>
+      </center>
+      </body>
+      <script>
+        function printTable(){
+          let number1
+          let result=""
+          let number2
+      
+          number1 = document.querySelector("#number1").value
+          number2 = document.querySelector("#number2").value
+      
+          document.write(`<h1>Table of ${number1} is </h1><br>  `)
+      
+            for(let i=1; i<=number2; i++){
+          
+       
+            document.write(`${result} ${number1} × ${i}= ${number1 *(i)} <br>`)
+       
+        }
+        document.querySelector("#result").innerHTML=result
+      }
+        
+      </script>
+</body>
 </html>

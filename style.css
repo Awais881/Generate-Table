@@ -1,0 +1,34 @@
+*{
+    background-color: darkturquoise;
+    
+  } 
+  /* .container{
+      display:flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 500px;
+      right: 35%;
+     
+  } */
+       
+  input{
+      width: 230px;
+      height: 30px;
+      background-color: ghostwhite;
+  
+  } 
+ button{
+      width: 100px;
+      height: 40px;
+      padding: 10px;
+      font-weight: bold;
+      background-color: beige;
+  border-radius: 10px;
+  }
+  button:hover{
+      background-color: chartreuse;
+      cursor: pointer;
+  }
+  /* p{
+      background-color: blanchedalmond;
+  } */  
