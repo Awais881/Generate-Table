@@ -29,6 +29,12 @@
       background-color: chartreuse;
       cursor: pointer;
   }
+#result{
+background-color: goldenrod;
+ box-shadow: 6px 4px 3px; border-radius:12px ;
+border: 7px solid violet;}
+
+}
   /* p{
       background-color: blanchedalmond;
   } */  
